@@ -53,3 +53,4 @@ resource "azurerm_network_interface" "nic2" {
     public_ip_address_id          = azurerm_public_ip.publicip.id
   }
 }
+}
