@@ -39,6 +39,12 @@ resource "azurerm_network_interface" "nic" {
   name                      = "01NIC"
   location                  = var.location3
   resource_group_name       = azurerm_resource_group.ab.name
+  
+  # Create network interface 2
+resource "azurerm_network_interface" "nic2" {
+  name                      = "02NIC"
+  location                  = var.location2
+  resource_group_name       = azurerm_resource_group.ab.name
 
   ip_configuration {
     name                          = "myNICConfg"
