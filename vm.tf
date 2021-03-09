@@ -1,6 +1,6 @@
 
 resource "azurerm_windows_virtual_machine" "nic" {
-  name                = "windows-vm1"
+  name                = "windows-vm"
   resource_group_name = azurerm_resource_group.ab.name
   location            = var.location3
     size                = "Standard_F2"
