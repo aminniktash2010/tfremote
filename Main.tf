@@ -13,7 +13,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "ab" {
   name     = "amin01"
-  location= var.location
+  location= var.location3
   }
 
 resource "azurerm_resource_group" "ra" {
