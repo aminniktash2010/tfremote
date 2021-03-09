@@ -28,7 +28,7 @@ resource "azurerm_virtual_machine" "vm" {
     os_profile_windows_config {
     disable_password_authentication = false
 }
-
+}
 data "azurerm_public_ip" "ip" {
   name                = azurerm_public_ip.publicip.name
   resource_group_name = azurerm_virtual_machine.vm.resource_group_name
