@@ -39,7 +39,7 @@ resource "azurerm_network_interface" "nic" {
   name                      = "01NIC"
   location                  = var.location3
   resource_group_name       = azurerm_resource_group.ab.name
-  
+}
   # Create network interface 2
 resource "azurerm_network_interface" "nic2" {
   name                      = "02NIC"
@@ -52,5 +52,4 @@ resource "azurerm_network_interface" "nic2" {
     private_ip_address_allocation = "dynamic"
     public_ip_address_id          = azurerm_public_ip.publicip.id
   }
-}
 }
